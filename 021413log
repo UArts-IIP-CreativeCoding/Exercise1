@@ -1,0 +1,372 @@
+Last login: Thu Feb 14 13:38:04 on ttys000
+schtoolia-roberts-personal-computer:~ bk$ cd /Applications/of_v0073_osx_release/apps 
+schtoolia-roberts-personal-computer:apps bk$ git init 
+Initialized empty Git repository in /Applications/of_v0073_osx_release/apps/.git/
+schtoolia-roberts-personal-computer:apps bk$ git clone https://github.com/UArts-IIP-CreativeCoding/Exercise1.git
+Cloning into 'Exercise1'...
+remote: Counting objects: 6, done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 6 (delta 0), reused 6 (delta 0)
+Unpacking objects: 100% (6/6), done.
+schtoolia-roberts-personal-computer:apps bk$ ls
+Exercise1		firstDay_demo_shapes
+_Examples_Moved.txt	myApps
+schtoolia-roberts-personal-computer:apps bk$ cd Exercise 1
+-bash: cd: Exercise: No such file or directory
+schtoolia-roberts-personal-computer:apps bk$ cd Exercise1
+schtoolia-roberts-personal-computer:Exercise1 bk$ ls
+kandinsky_comp-8.jpg	list
+schtoolia-roberts-personal-computer:Exercise1 bk$ git branch
+* master
+schtoolia-roberts-personal-computer:Exercise1 bk$ git branch bk
+schtoolia-roberts-personal-computer:Exercise1 bk$ git checkout bk
+Switched to branch 'bk'
+schtoolia-roberts-personal-computer:Exercise1 bk$ git branch
+* bk
+  master
+schtoolia-roberts-personal-computer:Exercise1 bk$ pwd
+/Applications/of_v0073_osx_release/apps/Exercise1
+schtoolia-roberts-personal-computer:Exercise1 bk$ touch gerbils
+schtoolia-roberts-personal-computer:Exercise1 bk$ ls
+gerbils			kandinsky_comp-8.jpg	list
+schtoolia-roberts-personal-computer:Exercise1 bk$ git checkout master
+Switched to branch 'master'
+schtoolia-roberts-personal-computer:Exercise1 bk$ bit branch
+-bash: bit: command not found
+schtoolia-roberts-personal-computer:Exercise1 bk$ git push -u origin bk 
+error: The requested URL returned error: 403 while accessing https://github.com/UArts-IIP-CreativeCoding/Exercise1.git/info/refs
+fatal: HTTP request failed
+schtoolia-roberts-personal-computer:Exercise1 bk$ git push -u origin bk
+error: The requested URL returned error: 403 while accessing https://github.com/UArts-IIP-CreativeCoding/Exercise1.git/info/refs
+fatal: HTTP request failed
+schtoolia-roberts-personal-computer:Exercise1 bk$ git push -u origin bk
+error: The requested URL returned error: 403 while accessing https://github.com/UArts-IIP-CreativeCoding/Exercise1.git/info/refs
+fatal: HTTP request failed
+schtoolia-roberts-personal-computer:Exercise1 bk$ git remote -v
+origin	https://github.com/UArts-IIP-CreativeCoding/Exercise1.git (fetch)
+origin	https://github.com/UArts-IIP-CreativeCoding/Exercise1.git (push)
+schtoolia-roberts-personal-computer:Exercise1 bk$ git push -u origin bk
+To https://github.com/UArts-IIP-CreativeCoding/Exercise1.git
+ * [new branch]      bk -> bk
+Branch bk set up to track remote branch bk from origin.
+schtoolia-roberts-personal-computer:Exercise1 bk$ git add *
+schtoolia-roberts-personal-computer:Exercise1 bk$ git status 
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	new file:   gerbils
+#
+schtoolia-roberts-personal-computer:Exercise1 bk$ git commit -m "1st Commit - Animals"
+[master 78418ec] 1st Commit - Animals
+ 0 files changed
+ create mode 100644 gerbils
+schtoolia-roberts-personal-computer:Exercise1 bk$ git push -u origin bk
+Branch bk set up to track remote branch bk from origin.
+Everything up-to-date
+schtoolia-roberts-personal-computer:Exercise1 bk$ git branch
+  bk
+* master
+schtoolia-roberts-personal-computer:Exercise1 bk$ git checkout bk
+Switched to branch 'bk'
+schtoolia-roberts-personal-computer:Exercise1 bk$ git push origin HEAD
+Everything up-to-date
+schtoolia-roberts-personal-computer:Exercise1 bk$ git status
+# On branch bk
+nothing to commit (working directory clean)
+schtoolia-roberts-personal-computer:Exercise1 bk$ git add gerbils
+fatal: pathspec 'gerbils' did not match any files
+schtoolia-roberts-personal-computer:Exercise1 bk$ touch gerbils
+schtoolia-roberts-personal-computer:Exercise1 bk$ git add *
+schtoolia-roberts-personal-computer:Exercise1 bk$ git commit -m "1st Commit - Animals"
+[bk 34e4eec] 1st Commit - Animals
+ 0 files changed
+ create mode 100644 gerbils
+schtoolia-roberts-personal-computer:Exercise1 bk$ git branch
+* bk
+  master
+schtoolia-roberts-personal-computer:Exercise1 bk$ git push origin HEAD
+To https://github.com/UArts-IIP-CreativeCoding/Exercise1.git
+   42f6460..34e4eec  HEAD -> bk
+schtoolia-roberts-personal-computer:Exercise1 bk$ ls
+Project.xcconfig		kandinsky_comp-8_crop.jpg
+addons.make			list
+bin				openFrameworks-Info.plist
+ex1.xcodeproj			src
+gerbils
+schtoolia-roberts-personal-computer:Exercise1 bk$ git status
+# On branch bk
+# Changes not staged for commit:
+#   (use "git add/rm <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	deleted:    kandinsky_comp-8.jpg
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	.DS_Store
+#	Project.xcconfig
+schtoolia-roberts-personal-computer:Exercise1 bk$ git commit -m "adding exercise1 - done in oF with mjsxi"
+[bk ad8b059] adding exercise1 - done in oF with mjsxi commit -m "adding exercis11 - done in oF with mjs
+ 167 files changed, 13005 insertions(+) bk$ git commit -m "adding exercis11 - done in oF with m
+ create mode 100644 Project.xcconfigercise1 bk$ git commit -m "adding exercis11 - done in oF with
+ create mode 100644 addons.maker:Exercise1 bk$ git commit -m "adding exercis.1 - done in oF wit
+ create mode 100644 bin/data/.gitkeep
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/GLUT
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Headers/copy.h
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Headers/extrude.h
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Headers/glsmap.h
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Headers/glsmapint.h
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Headers/glut.h
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Headers/glutbitmap.h
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Headers/glutf90.h
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Headers/glutstroke.h
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Headers/gutil.h
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Headers/intersect.h
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Headers/port.h
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Headers/rot.h
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Headers/segment.h
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Headers/tube.h
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Headers/tube_gc.h
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Headers/vvector.h
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Resources/Caution.tiff
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Resources/English.lproj/GLUT.nib/classes.nib
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Resources/English.lproj/GLUT.nib/info.nib
+ create mode 100644 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Resources/English.lproj/GLUT.nib/objects.nib
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Resources/English.lproj/GLUTClipboard.nib/classes.nib
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Resources/English.lproj/GLUTClipboard.nib/info.nib
+ create mode 100644 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Resources/English.lproj/GLUTClipboard.nib/objects.nib
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Resources/English.lproj/GLUTPreferences.nib/classes.nib
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Resources/English.lproj/GLUTPreferences.nib/info.nib
+ create mode 100644 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Resources/English.lproj/GLUTPreferences.nib/objects.nib
+ create mode 100644 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Resources/English.lproj/GLUTUI.strings
+ create mode 100644 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Resources/English.lproj/InfoPlist.strings
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Resources/Info.plist
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Resources/blankCursor.tiff
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Resources/bottomCursor.tiff
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Resources/bottomleftCursor.tiff
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Resources/bottomrightCursor.tiff
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Resources/crossCursor.tiff
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Resources/cycleCursor.tiff
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Resources/destroyCursor.tiff
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Resources/fingerCursor.tiff
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Resources/helpCursor.tiff
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Resources/leftCursor.tiff
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Resources/leftRightCursor.tiff
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Resources/rightArrowCursor.tiff
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Resources/rightCursor.tiff
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Resources/sprayCursor.tiff
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Resources/topCursor.tiff
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Resources/topleftCursor.tiff
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Resources/toprightCursor.tiff
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Resources/upDownCursor.tiff
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Resources/waitCursor.tiff
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Versions/A/GLUT
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Versions/A/Headers/copy.h
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Versions/A/Headers/extrude.h
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Versions/A/Headers/glsmap.h
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Versions/A/Headers/glsmapint.h
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Versions/A/Headers/glut.h
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Versions/A/Headers/glutbitmap.h
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Versions/A/Headers/glutf90.h
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Versions/A/Headers/glutstroke.h
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Versions/A/Headers/gutil.h
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Versions/A/Headers/intersect.h
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Versions/A/Headers/port.h
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Versions/A/Headers/rot.h
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Versions/A/Headers/segment.h
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Versions/A/Headers/tube.h
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Versions/A/Headers/tube_gc.h
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Versions/A/Headers/vvector.h
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Versions/A/Resources/Caution.tiff
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Versions/A/Resources/English.lproj/GLUT.nib/classes.nib
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Versions/A/Resources/English.lproj/GLUT.nib/info.nib
+ create mode 100644 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Versions/A/Resources/English.lproj/GLUT.nib/objects.nib
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Versions/A/Resources/English.lproj/GLUTClipboard.nib/classes.nib
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Versions/A/Resources/English.lproj/GLUTClipboard.nib/info.nib
+ create mode 100644 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Versions/A/Resources/English.lproj/GLUTClipboard.nib/objects.nib
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Versions/A/Resources/English.lproj/GLUTPreferences.nib/classes.nib
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Versions/A/Resources/English.lproj/GLUTPreferences.nib/info.nib
+ create mode 100644 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Versions/A/Resources/English.lproj/GLUTPreferences.nib/objects.nib
+ create mode 100644 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Versions/A/Resources/English.lproj/GLUTUI.strings
+ create mode 100644 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Versions/A/Resources/English.lproj/InfoPlist.strings
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Versions/A/Resources/Info.plist
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Versions/A/Resources/blankCursor.tiff
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Versions/A/Resources/bottomCursor.tiff
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Versions/A/Resources/bottomleftCursor.tiff
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Versions/A/Resources/bottomrightCursor.tiff
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Versions/A/Resources/crossCursor.tiff
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Versions/A/Resources/cycleCursor.tiff
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Versions/A/Resources/destroyCursor.tiff
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Versions/A/Resources/fingerCursor.tiff
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Versions/A/Resources/helpCursor.tiff
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Versions/A/Resources/leftCursor.tiff
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Versions/A/Resources/leftRightCursor.tiff
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Versions/A/Resources/rightArrowCursor.tiff
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Versions/A/Resources/rightCursor.tiff
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Versions/A/Resources/sprayCursor.tiff
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Versions/A/Resources/topCursor.tiff
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Versions/A/Resources/topleftCursor.tiff
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Versions/A/Resources/toprightCursor.tiff
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Versions/A/Resources/upDownCursor.tiff
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Versions/A/Resources/waitCursor.tiff
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Versions/Current/GLUT
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Versions/Current/Headers/copy.h
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Versions/Current/Headers/extrude.h
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Versions/Current/Headers/glsmap.h
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Versions/Current/Headers/glsmapint.h
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Versions/Current/Headers/glut.h
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Versions/Current/Headers/glutbitmap.h
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Versions/Current/Headers/glutf90.h
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Versions/Current/Headers/glutstroke.h
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Versions/Current/Headers/gutil.h
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Versions/Current/Headers/intersect.h
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Versions/Current/Headers/port.h
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Versions/Current/Headers/rot.h
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Versions/Current/Headers/segment.h
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Versions/Current/Headers/tube.h
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Versions/Current/Headers/tube_gc.h
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Versions/Current/Headers/vvector.h
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Versions/Current/Resources/Caution.tiff
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Versions/Current/Resources/English.lproj/GLUT.nib/classes.nib
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Versions/Current/Resources/English.lproj/GLUT.nib/info.nib
+ create mode 100644 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Versions/Current/Resources/English.lproj/GLUT.nib/objects.nib
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Versions/Current/Resources/English.lproj/GLUTClipboard.nib/classes.nib
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Versions/Current/Resources/English.lproj/GLUTClipboard.nib/info.nib
+ create mode 100644 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Versions/Current/Resources/English.lproj/GLUTClipboard.nib/objects.nib
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Versions/Current/Resources/English.lproj/GLUTPreferences.nib/classes.nib
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Versions/Current/Resources/English.lproj/GLUTPreferences.nib/info.nib
+ create mode 100644 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Versions/Current/Resources/English.lproj/GLUTPreferences.nib/objects.nib
+ create mode 100644 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Versions/Current/Resources/English.lproj/GLUTUI.strings
+ create mode 100644 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Versions/Current/Resources/English.lproj/InfoPlist.strings
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Versions/Current/Resources/Info.plist
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Versions/Current/Resources/blankCursor.tiff
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Versions/Current/Resources/bottomCursor.tiff
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Versions/Current/Resources/bottomleftCursor.tiff
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Versions/Current/Resources/bottomrightCursor.tiff
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Versions/Current/Resources/crossCursor.tiff
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Versions/Current/Resources/cycleCursor.tiff
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Versions/Current/Resources/destroyCursor.tiff
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Versions/Current/Resources/fingerCursor.tiff
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Versions/Current/Resources/helpCursor.tiff
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Versions/Current/Resources/leftCursor.tiff
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Versions/Current/Resources/leftRightCursor.tiff
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Versions/Current/Resources/rightArrowCursor.tiff
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Versions/Current/Resources/rightCursor.tiff
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Versions/Current/Resources/sprayCursor.tiff
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Versions/Current/Resources/topCursor.tiff
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Versions/Current/Resources/topleftCursor.tiff
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Versions/Current/Resources/toprightCursor.tiff
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Versions/Current/Resources/upDownCursor.tiff
+ create mode 100755 bin/ex1Debug.app/Contents/Frameworks/GLUT.framework/Versions/Current/Resources/waitCursor.tiff
+ create mode 100644 bin/ex1Debug.app/Contents/Info.plist
+ create mode 100755 bin/ex1Debug.app/Contents/MacOS/ex1Debug
+ create mode 100644 bin/ex1Debug.app/Contents/MacOS/libfmodex.dylib
+ create mode 100644 bin/ex1Debug.app/Contents/PkgInfo
+ create mode 100644 ex1.xcodeproj/project.pbxproj
+ create mode 100644 ex1.xcodeproj/project.xcworkspace/contents.xcworkspacedata
+ create mode 100644 ex1.xcodeproj/project.xcworkspace/xcuserdata/Matt.xcuserdatad/UserInterfaceState.xcuserstate
+ create mode 100644 ex1.xcodeproj/project.xcworkspace/xcuserdata/bk.xcuserdatad/UserInterfaceState.xcuserstate
+ create mode 100644 ex1.xcodeproj/project.xcworkspace/xcuserdata/bk.xcuserdatad/WorkspaceSettings.xcsettings
+ create mode 100644 ex1.xcodeproj/xcshareddata/xcschemes/ex1 Debug.xcscheme
+ create mode 100644 ex1.xcodeproj/xcshareddata/xcschemes/ex1 Release.xcscheme
+ create mode 100644 ex1.xcodeproj/xcuserdata/Matt.xcuserdatad/xcdebugger/Breakpoints.xcbkptlist
+ create mode 100644 ex1.xcodeproj/xcuserdata/Matt.xcuserdatad/xcschemes/xcschememanagement.plist
+ create mode 100644 ex1.xcodeproj/xcuserdata/bk.xcuserdatad/xcschemes/xcschememanagement.plist
+ create mode 100755 kandinsky_comp-8_crop.jpg
+ create mode 100644 openFrameworks-Info.plist
+ create mode 100644 src/main.cpp
+ create mode 100644 src/testApp.cpp
+ create mode 100644 src/testApp.h
+schtoolia-roberts-personal-computer:Exercise1 bk$ git status
+# On branch bk
+# Your branch is ahead of 'origin/bk' by 1 commit.
+#
+# Changes not staged for commit:
+#   (use "git add/rm <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	deleted:    kandinsky_comp-8.jpg
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	.DS_Store
+no changes added to commit (use "git add" and/or "git commit -a")
+schtoolia-roberts-personal-computer:Exercise1 bk$ git push origin bk
+To https://github.com/UArts-IIP-CreativeCoding/Exercise1.git
+   34e4eec..ad8b059  bk -> bk
+schtoolia-roberts-personal-computer:Exercise1 bk$ touch readme
+schtoolia-roberts-personal-computer:Exercise1 bk$ git add readme
+schtoolia-roberts-personal-computer:Exercise1 bk$ git status
+# On branch bk
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	new file:   readme
+#
+# Changes not staged for commit:
+#   (use "git add/rm <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	deleted:    gerbils
+#	deleted:    kandinsky_comp-8.jpg
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	.DS_Store
+schtoolia-roberts-personal-computer:Exercise1 bk$ git commit -m "readme"
+[bk 2b4084f] readme
+ 0 files changed
+ create mode 100644 readme
+schtoolia-roberts-personal-computer:Exercise1 bk$ git push -u origin bk
+To https://github.com/UArts-IIP-CreativeCoding/Exercise1.git
+   ad8b059..2b4084f  bk -> bk
+Branch bk set up to track remote branch bk from origin.
+schtoolia-roberts-personal-computer:Exercise1 bk$ ls
+Project.xcconfig		ex1.xcodeproj			openFrameworks-Info.plist
+addons.make			kandinsky_comp-8_crop.jpg	readme
+bin				list				src
+schtoolia-roberts-personal-computer:Exercise1 bk$ git status
+# On branch bk
+# Changes not staged for commit:
+#   (use "git add/rm <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	deleted:    gerbils
+#	deleted:    kandinsky_comp-8.jpg
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	.DS_Store
+no changes added to commit (use "git add" and/or "git commit -a")
+schtoolia-roberts-personal-computer:Exercise1 bk$ git rm gerbils 
+rm 'gerbils'
+schtoolia-roberts-personal-computer:Exercise1 bk$ git rm kandinsky_comp-8.jpg
+rm 'kandinsky_comp-8.jpg'
+schtoolia-roberts-personal-computer:Exercise1 bk$ git status
+# On branch bk
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	deleted:    gerbils
+#	deleted:    kandinsky_comp-8.jpg
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	.DS_Store
+schtoolia-roberts-personal-computer:Exercise1 bk$ git commit -m "removing fluff/animals"
+[bk a8c252d] removing fluff/animals
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 gerbils
+ delete mode 100755 kandinsky_comp-8.jpg
+schtoolia-roberts-personal-computer:Exercise1 bk$ git push -u origin bk
+To https://github.com/UArts-IIP-CreativeCoding/Exercise1.git
+   2b4084f..a8c252d  bk -> bk
+Branch bk set up to track remote branch bk from origin.
+schtoolia-roberts-personal-computer:Exercise1 bk$ 
+
